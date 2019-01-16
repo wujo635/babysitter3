@@ -10,7 +10,7 @@ public class BabysitterCalculatorTest {
 
     @Test
     public void calculateReturnsNegativeOne() {
-        assertEquals(-1, calculator.calculate());
+        assertEquals(-1, calculator.calculate(17,18));
 }
 
 }
