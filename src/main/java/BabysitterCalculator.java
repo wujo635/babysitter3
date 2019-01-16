@@ -1,5 +1,5 @@
 public class BabysitterCalculator {
     int calculate() {
-        return 1;
+        return -1;
     }
 }
