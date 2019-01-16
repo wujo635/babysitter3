@@ -2,7 +2,6 @@ package kata;
 
 import static org.junit.Assert.assertEquals;
 
-import kata.BabysitterCalculator;
 import org.junit.Test;
 
 public class BabysitterCalculatorTest {
