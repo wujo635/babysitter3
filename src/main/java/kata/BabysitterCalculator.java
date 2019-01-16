@@ -1,7 +1,7 @@
 package kata;
 
 public class BabysitterCalculator {
-    int calculate() {
+    public int calculate() {
         return -1;
     }
 }
