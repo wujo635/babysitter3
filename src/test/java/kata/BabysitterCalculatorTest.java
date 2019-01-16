@@ -10,7 +10,11 @@ public class BabysitterCalculatorTest {
 
     @Test
     public void calculatePayForOneHourOfWork() {
-        assertEquals(1, calculator.calculate(17,18));
-}
+        assertEquals(1, calculator.calculate(17, 18));
+    }
 
+    @Test
+    public void calculatePayForTwoHoursWork() {
+        assertEquals(2,calculator.calculate(17,19));
+    }
 }
