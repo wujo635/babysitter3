@@ -9,8 +9,8 @@ public class BabysitterCalculatorTest {
     private BabysitterCalculator calculator = new BabysitterCalculator();
 
     @Test
-    public void calculateReturnsNegativeOne() {
-        assertEquals(-1, calculator.calculate(17,18));
+    public void calculatePayForOneHourOfWork() {
+        assertEquals(1, calculator.calculate(17,18));
 }
 
 }
