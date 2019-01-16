@@ -7,9 +7,11 @@ import org.junit.Test;
 
 public class BabysitterCalculatorTest {
 
+    private BabysitterCalculator calculator = new BabysitterCalculator();
+
     @Test
     public void calculateReturnsNegativeOne() {
-        assertEquals(-1,new BabysitterCalculator().calculate());
+        assertEquals(-1, calculator.calculate());
 }
 
 }
