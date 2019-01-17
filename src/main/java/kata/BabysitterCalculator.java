@@ -2,12 +2,16 @@ package kata;
 
 public class BabysitterCalculator {
     public int calculate(int start, int end) {
-        if (start < 17 && start > 4) {
+        if (isNotWithinWorkingHours(start)) {
             return -1;
         }
-        if (end < 17 && end > 4) {
+        if (isNotWithinWorkingHours(end)) {
             return -1;
         }
         return (end - start);
+    }
+
+    private boolean isNotWithinWorkingHours(int time) {
+        return time < 17 && time > 4;
     }
 }
