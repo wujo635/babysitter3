@@ -37,4 +37,9 @@ public class BabysitterCalculatorTest {
     public void endTimeOutOfBoundsAt5am() {
         assertEquals(-1, calculator.calculate(4, 5));
     }
+
+    @Test
+    public void endTimeOutOfBoundsAt3pm() {
+        assertEquals(-1, calculator.calculate(4,15));
+    }
 }
