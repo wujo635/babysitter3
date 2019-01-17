@@ -5,6 +5,9 @@ public class BabysitterCalculator {
         if (start < 17 && start > 4) {
             return -1;
         }
+        if (end == 5) {
+            return -1;
+        }
         return (end - start);
     }
 }
