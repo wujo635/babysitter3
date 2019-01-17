@@ -2,10 +2,7 @@ package kata;
 
 public class BabysitterCalculator {
     public int calculate(int start, int end) {
-        if (isNotWithinWorkingHours(start)) {
-            return -1;
-        }
-        if (isNotWithinWorkingHours(end)) {
+        if (isNotWithinWorkingHours(start) || isNotWithinWorkingHours(end)) {
             return -1;
         }
         return (end - start);
