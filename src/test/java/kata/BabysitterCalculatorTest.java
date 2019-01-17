@@ -24,7 +24,7 @@ public class BabysitterCalculatorTest {
     }
 
     @Test
-    public void startTimeCannotBeEarlierThan5pm() {
+    public void startTimeCannotBeEarlierThan5pmReturnsNegative1() {
         assertEquals(-1, calculator.calculate(16, 18));
     }
 
@@ -34,12 +34,14 @@ public class BabysitterCalculatorTest {
     }
 
     @Test
-    public void endTimeOutOfBoundsAt5am() {
+    public void endTimeOutOfBoundsAt5amReturnsNegative1() {
         assertEquals(-1, calculator.calculate(4, 5));
     }
 
     @Test
-    public void endTimeOutOfBoundsAt3pm() {
+    public void endTimeOutOfBoundsAt3pmReturnsNegative1() {
         assertEquals(-1, calculator.calculate(4,15));
     }
+
 }
+
