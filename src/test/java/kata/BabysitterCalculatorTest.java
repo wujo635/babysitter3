@@ -30,6 +30,11 @@ public class BabysitterCalculatorTest {
 
     @Test
     public void startTimeCanBeLateAs4am() {
-        assertEquals(0,calculator.calculate(4,4));
+        assertEquals(0, calculator.calculate(4, 4));
+    }
+
+    @Test
+    public void endTimeOutOfBoundsAt5am() {
+        assertEquals(-1,calculator.calculate(4,5));
     }
 }
