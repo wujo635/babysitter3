@@ -5,6 +5,9 @@ public class BabysitterCalculator {
         if (isNotWithinWorkingHours(start) || isNotWithinWorkingHours(end)) {
             return -1;
         }
+        if (end < start) {
+            return -1;
+        }
         return (end - start);
     }
 
