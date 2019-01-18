@@ -47,5 +47,10 @@ public class BabysitterCalculatorTest {
     public void endOneHourBeforeStartReturnsNegative1() {
         assertEquals(-1, calculator.calculate(18, 17));
     }
+
+    @Test
+    public void endTwoHoursBeforeStartReturnsNegative1() {
+        assertEquals(-1, calculator.calculate(19, 17));
+    }
 }
 
