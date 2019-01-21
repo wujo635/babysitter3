@@ -10,53 +10,49 @@ public class BabysitterCalculatorTest {
     private BabysitterCalculator calculator = new BabysitterCalculator();
 
     @Test
-    public void calculatePayForOneHourOfWork() {
+    public void shouldCalculatePayForOneHourOfWork() {
         assertEquals(1, calculator.calculate(17, 18));
     }
 
     @Test
-    public void calculatePayForTwoHoursWork() {
+    public void shouldCalculatePayForTwoHoursWork() {
         assertEquals(2, calculator.calculate(17, 19));
     }
 
     @Test
-    public void startTimeEqualEndTimeReturnsZero() {
+    public void shouldReturnZeroWhenStartEqualsEndTime() {
         assertEquals(0, calculator.calculate(17, 17));
     }
 
     @Test
-    public void startTimeCannotBeEarlierThan5pmReturnsNegative1() {
+    public void shouldDisallowStartTimeEarlierThan5pm() {
         assertEquals(-1, calculator.calculate(16, 18));
     }
 
     @Test
-    public void startTimeCanBeLateAs4am() {
+    public void shouldAllowTimesAsLateAs4am() {
         assertEquals(0, calculator.calculate(4, 4));
     }
 
     @Test
-    public void endTimeOutOfBoundsAt5amReturnsNegative1() {
+    public void shouldDisallowEndTimeAfter4am() {
         assertEquals(-1, calculator.calculate(4, 5));
     }
 
     @Test
-    public void endTimeOutOfBoundsAt3pmReturnsNegative1() {
+    public void shouldDisallowEndTimeBefore4pm() {
         assertEquals(-1, calculator.calculate(4, 15));
     }
 
     @Test
-    public void endOneHourBeforeStartReturnsNegative1() {
-        assertEquals(-1, calculator.calculate(18, 17));
-    }
-
-    @Test
-    public void endTwoHoursBeforeStartReturnsNegative1() {
+    public void shouldDisallowEndBeforeStartTime() {
         assertEquals(-1, calculator.calculate(19, 17));
     }
 
     @Test
-    public void endAtMidnightAndStartAt11PMReturns1() {
+    public void shouldAllowEndAtMidnight() {
         assertEquals(1, calculator.calculate(23, 0));
     }
+    
 }
 
