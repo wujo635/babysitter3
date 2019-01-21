@@ -58,5 +58,10 @@ public class BabysitterCalculatorTest {
     public void shouldAllowStartAtMidnight() {
         assertEquals(1, calculator.calculate(0,1));
     }
+
+    @Test
+    public void shouldAllowTimesToCrossMidnight() {
+        assertEquals(11, calculator.calculate(17,4));
+    }
 }
 
