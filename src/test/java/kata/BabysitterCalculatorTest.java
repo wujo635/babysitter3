@@ -53,6 +53,10 @@ public class BabysitterCalculatorTest {
     public void shouldAllowEndAtMidnight() {
         assertEquals(1, calculator.calculate(23, 0));
     }
-    
+
+    @Test
+    public void shouldAllowStartAtMidnight() {
+        assertEquals(1, calculator.calculate(0,1));
+    }
 }
 
