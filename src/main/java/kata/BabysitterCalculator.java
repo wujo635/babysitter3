@@ -4,15 +4,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class BabysitterCalculator {
-    public int calculate(int start, int end) {
+    public int calculate(int start, int end, Family family) {
         if (isInvalidWorkingHours(start, end)) {
             return -1;
         }
-        return sumPay(start, end);
+        return sumPay(start, end, family);
     }
 
-    private int sumPay(int start, int end) {
-        Map<Integer, Integer> hourPayMap = createHourPayMap();
+    private int sumPay(int start, int end, Family family) {
+        Map<Integer, Integer> hourPayMap = family.getHourPayMap();
         if (isAcrossMidnight(start, end)) {
             return sumPartialPay(start, 24, hourPayMap) + sumPartialPay(0, end, hourPayMap);
         }
@@ -29,23 +29,6 @@ public class BabysitterCalculator {
             pay += hourPayMap.get(i);
         }
         return pay;
-    }
-
-    private Map<Integer, Integer> createHourPayMap() {
-        HashMap<Integer, Integer> hourPayMap = new HashMap<>();
-        hourPayMap.put(0, 1);
-        hourPayMap.put(1, 1);
-        hourPayMap.put(2, 1);
-        hourPayMap.put(3, 1);
-        hourPayMap.put(4, 1);
-        hourPayMap.put(17, 1);
-        hourPayMap.put(18, 1);
-        hourPayMap.put(19, 1);
-        hourPayMap.put(20, 1);
-        hourPayMap.put(21, 1);
-        hourPayMap.put(22, 1);
-        hourPayMap.put(23, 1);
-        return hourPayMap;
     }
 
     private boolean isInvalidWorkingHours(int start, int end) {
