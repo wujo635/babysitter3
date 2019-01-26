@@ -82,5 +82,11 @@ public class BabysitterCalculatorTest {
     public void shouldAllowTimesToCrossMidnight() {
         assertEquals(11, calculator.calculate(17, 4, family));
     }
+
+    @Test
+    public void shouldAllowVariablePayrate() {
+        assertEquals(35, calculator.calculate(22,24, new FamilyA()));
+    }
+    
 }
 
