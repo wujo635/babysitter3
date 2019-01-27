@@ -17,7 +17,6 @@ public class BabysitterCalculatorTest {
         hourPayMap.put(1, 1);
         hourPayMap.put(2, 1);
         hourPayMap.put(3, 1);
-        hourPayMap.put(4, 1);
         hourPayMap.put(17, 1);
         hourPayMap.put(18, 1);
         hourPayMap.put(19, 1);
