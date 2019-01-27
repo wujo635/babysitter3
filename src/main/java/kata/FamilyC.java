@@ -11,7 +11,6 @@ public class FamilyC implements Family {
         hourPayMap.put(1, 15);
         hourPayMap.put(2, 15);
         hourPayMap.put(3, 15);
-        hourPayMap.put(4, 15);
         hourPayMap.put(17, 21);
         hourPayMap.put(18, 21);
         hourPayMap.put(19, 21);
