@@ -7,10 +7,10 @@ public class FamilyA implements Family {
     @Override
     public Map<Integer, Integer> getHourPayMap() {
         HashMap<Integer,Integer> hourPayMap = new HashMap<>();
-//        hourPayMap.put(0, 20);
-//        hourPayMap.put(1, 20);
-//        hourPayMap.put(2, 20);
-//        hourPayMap.put(3, 20);
+        hourPayMap.put(0, 20);
+        hourPayMap.put(1, 20);
+        hourPayMap.put(2, 20);
+        hourPayMap.put(3, 20);
         hourPayMap.put(17, 15);
         hourPayMap.put(18, 15);
         hourPayMap.put(19, 15);
