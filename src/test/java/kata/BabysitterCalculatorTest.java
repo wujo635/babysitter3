@@ -85,8 +85,13 @@ public class BabysitterCalculatorTest {
 
     @Test
     public void shouldAllowVariablePayrate() {
-        assertEquals(35, calculator.calculate(22,24, new FamilyA()));
+        assertEquals(35, calculator.calculate(22, 24, new FamilyA()));
     }
-    
+
+    @Test
+    public void shouldAllowMultiplePayrateChanges() {
+        assertEquals(140, calculator.calculate(17, 4, new FamilyB()));
+    }
+
 }
 
