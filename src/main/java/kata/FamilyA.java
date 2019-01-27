@@ -12,11 +12,11 @@ public class FamilyA implements Family {
 //        hourPayMap.put(2, 20);
 //        hourPayMap.put(3, 20);
         hourPayMap.put(17, 15);
-//        hourPayMap.put(18, 15);
-//        hourPayMap.put(19, 15);
-//        hourPayMap.put(20, 15);
-//        hourPayMap.put(21, 15);
-//        hourPayMap.put(22, 15);
+        hourPayMap.put(18, 15);
+        hourPayMap.put(19, 15);
+        hourPayMap.put(20, 15);
+        hourPayMap.put(21, 15);
+        hourPayMap.put(22, 15);
 //        hourPayMap.put(23, 20);
         return hourPayMap;
     }
