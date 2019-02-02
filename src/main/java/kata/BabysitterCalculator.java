@@ -1,6 +1,5 @@
 package kata;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class BabysitterCalculator {
