@@ -12,7 +12,7 @@ public class FamilyB implements Family {
 //        hourPayMap.put(1, 16);
 //        hourPayMap.put(2, 16);
 //        hourPayMap.put(3, 16);
-//        hourPayMap.put(17, 12);
+        hourPayMap.put(17, 12);
 //        hourPayMap.put(18, 12);
 //        hourPayMap.put(19, 12);
 //        hourPayMap.put(20, 12);
