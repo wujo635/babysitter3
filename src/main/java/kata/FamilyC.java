@@ -12,9 +12,9 @@ public class FamilyC implements Family {
 //        hourPayMap.put(2, 15);
 //        hourPayMap.put(3, 15);
         hourPayMap.put(17, 21);
-//        hourPayMap.put(18, 21);
-//        hourPayMap.put(19, 21);
-//        hourPayMap.put(20, 21);
+        hourPayMap.put(18, 21);
+        hourPayMap.put(19, 21);
+        hourPayMap.put(20, 21);
 //        hourPayMap.put(21, 15);
 //        hourPayMap.put(22, 15);
 //        hourPayMap.put(23, 15);

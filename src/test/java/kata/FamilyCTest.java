@@ -13,5 +13,8 @@ public class FamilyCTest {
     @Test
     public void shouldPay21PerHourBefore9pm() {
         assertEquals(Integer.valueOf(21), hourPayMap.get(17));
+        assertEquals(Integer.valueOf(21), hourPayMap.get(18));
+        assertEquals(Integer.valueOf(21), hourPayMap.get(19));
+        assertEquals(Integer.valueOf(21), hourPayMap.get(20));
     }
 }
