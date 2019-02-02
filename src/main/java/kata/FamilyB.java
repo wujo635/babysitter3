@@ -8,7 +8,7 @@ public class FamilyB implements Family {
     @Override
     public Map<Integer, Integer> getHourPayMap() {
         HashMap<Integer,Integer> hourPayMap = new HashMap<>();
-//        hourPayMap.put(0, 16);
+        hourPayMap.put(0, 16);
 //        hourPayMap.put(1, 16);
 //        hourPayMap.put(2, 16);
 //        hourPayMap.put(3, 16);
